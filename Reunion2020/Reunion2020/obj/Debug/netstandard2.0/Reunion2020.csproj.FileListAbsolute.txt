@@ -1,0 +1,16 @@
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\bin\Debug\netstandard2.0\Reunion2020.deps.json
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\bin\Debug\netstandard2.0\Reunion2020.dll
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\bin\Debug\netstandard2.0\Reunion2020.pdb
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.csproj.CoreCompileInputs.cache
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.AssemblyInfoInputs.cache
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.AssemblyInfo.cs
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.dll
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.pdb
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020\obj\Debug\netstandard2.0\Reunion2020.csprojAssemblyReference.cache

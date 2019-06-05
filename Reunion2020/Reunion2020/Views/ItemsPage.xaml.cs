@@ -27,7 +27,7 @@ namespace Reunion2020.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Event;
             if (item == null)
                 return;
 
@@ -41,8 +41,23 @@ namespace Reunion2020.Views
         {
             base.OnAppearing();
 
-            if (viewModel.Events.Count == 0)
+            if (viewModel.EventsList.Count == 0)
+            {
                 viewModel.LoadItemsCommand.Execute(null);
+            }
+                
         }
+
+        public void OnNext(object sender, EventArgs e)
+        {
+            viewModel.LoadNextItemsCommand.Execute(null);
+        }
+
+        public void OnPrev(object sender, EventArgs e)
+        {
+            viewModel.LoadPrevItemsCommand.Execute(null);
+        }
+
+        
     }
 }

@@ -4,9 +4,26 @@
              x:Class="Reunion2020.Views.ItemDetailPage"
              Title="{Binding Title}">
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" FontSize="Small"/>
+        <Label Text="Title:" FontSize="Medium" />
+        <Label Text="{Binding Item.Title}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
+        <Label Text="Location:" FontSize="Medium" />
+        <Label Text="{Binding Item.Location}" FontSize="Small"/>
+        <Label Text="Target Group:" FontSize="Medium"/>
+        <Label LineBreakMode="NoWrap">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="{Binding Item.TargetGroupMin}"/>
+                    <Span Text=" - "/>
+                    <Span Text="{Binding Item.TargetGroupMax}"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Text="Date:" FontSize="Medium" />
+        <Label Text="{Binding Item.Date}" FontSize="Small"/>
+        <Label Text="Signups:" FontSize="Medium" />
+        <Label Text="{Binding Item.NoOfSignups}" FontSize="Small"/>
+        <Button Text="Sign up"/>
     </StackLayout>
 </ContentPage>

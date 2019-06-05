@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Reunion2020.Views.ItemsPage"
-              Title="{Binding Title}"
+              Title="{Binding PageTitle}"
              x:Name="BrowseItemsPage">
     <ContentPage.ToolbarItems>
        
@@ -10,7 +10,7 @@
 
     <StackLayout>
         <ListView x:Name="ItemsListView"
-                ItemsSource="{Binding Events}"
+                ItemsSource="{Binding EventsList}"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="true"
                 RefreshCommand="{Binding LoadItemsCommand}"
@@ -44,12 +44,13 @@
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
-                                   
-
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Label Text="{Binding pageNo}" />
+        <Button Text="Prev" Clicked="OnPrev"/>
+        <Button Text="Next" Clicked="OnNext"/>
     </StackLayout>
 </ContentPage>

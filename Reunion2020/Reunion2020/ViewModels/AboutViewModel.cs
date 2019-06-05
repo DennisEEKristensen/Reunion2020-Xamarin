@@ -9,7 +9,7 @@ namespace Reunion2020.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "Contacts";
+            PageTitle = "Contacts";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }

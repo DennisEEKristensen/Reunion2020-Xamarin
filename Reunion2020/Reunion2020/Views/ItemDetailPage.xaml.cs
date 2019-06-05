@@ -24,7 +24,7 @@ namespace Reunion2020.Views
         {
             InitializeComponent();
 
-            var item = new Item
+            var item = new Event
             {
                 Title = "Event One",
                 Description = "This is an item description."

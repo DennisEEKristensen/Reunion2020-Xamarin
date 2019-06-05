@@ -55,3 +55,4 @@ C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020.iOS\obj\iPhoneSi
 C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020.iOS\obj\iPhoneSimulator\Debug\Reunion2020.iOS.csproj.CopyComplete
 C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020.iOS\obj\iPhoneSimulator\Debug\Reunion2020.iOS.exe
 C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020.iOS\obj\iPhoneSimulator\Debug\Reunion2020.iOS.pdb
+C:\Users\DEgel\source\repos\Reunion2020\Reunion2020\Reunion2020.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll

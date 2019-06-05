@@ -6,22 +6,22 @@ using Reunion2020.Models;
 
 namespace Reunion2020.Services
 {
-    public class MockDataStore : IDataStore<Item>
+    public class MockDataStore : IDataStore<Event>
     {
-        List<Item> items;
+        List<Event> items;
 
         public MockDataStore()
         {
-            items = new List<Item>();
+            items = new List<Event>();
 
-            var mockItems = new List<Item>
+            var mockItems = new List<Event>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event One", Date ="25/5 - 2019", Location="Somewhere", TargetGroupMin = 10, TargetGroupMax = 20 },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event Two", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event Three", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event Four", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event Five", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Event Six", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event One", Date ="25/5 - 2019", Location="Somewhere", TargetGroupMin = 10, TargetGroupMax = 20 },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event Two", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event Three", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event Four", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event Five", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event Six", Description="This is an item description." },
             };
 
             foreach (var item in mockItems)
@@ -30,16 +30,16 @@ namespace Reunion2020.Services
             }
         }
 
-        public async Task<bool> AddItemAsync(Item item)
+        public async Task<bool> AddItemAsync(Event item)
         {
             items.Add(item);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> UpdateItemAsync(Item item)
+        public async Task<bool> UpdateItemAsync(Event item)
         {
-            var oldItem = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
+            var oldItem = items.Where((Event arg) => arg.Id == item.Id).FirstOrDefault();
             items.Remove(oldItem);
             items.Add(item);
 
@@ -48,18 +48,18 @@ namespace Reunion2020.Services
 
         public async Task<bool> DeleteItemAsync(string id)
         {
-            var oldItem = items.Where((Item arg) => arg.Id == id).FirstOrDefault();
+            var oldItem = items.Where((Event arg) => arg.Id == id).FirstOrDefault();
             items.Remove(oldItem);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<Item> GetItemAsync(string id)
+        public async Task<Event> GetItemAsync(string id)
         {
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
 
-        public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<Event>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
         }

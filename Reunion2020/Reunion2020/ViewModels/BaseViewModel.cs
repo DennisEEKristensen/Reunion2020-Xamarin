@@ -12,7 +12,7 @@ namespace Reunion2020.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public IDataStore<Event> DataStore => DependencyService.Get<IDataStore<Event>>() ?? new MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy
@@ -22,7 +22,7 @@ namespace Reunion2020.ViewModels
         }
 
         string title = string.Empty;
-        public string Title
+        public string PageTitle
         {
             get { return title; }
             set { SetProperty(ref title, value); }

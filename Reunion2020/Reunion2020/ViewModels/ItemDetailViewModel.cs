@@ -6,10 +6,10 @@ namespace Reunion2020.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
-        public ItemDetailViewModel(Item item = null)
+        public Event Item { get; set; }
+        public ItemDetailViewModel(Event item = null)
         {
-            Title = item?.Title;
+            PageTitle = item?.Title;
             Item = item;
         }
     }

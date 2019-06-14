@@ -24,6 +24,6 @@
         <Label Text="{Binding Item.Date}" FontSize="Small"/>
         <Label Text="Signups:" FontSize="Medium" />
         <Label Text="{Binding Item.NoOfSignups}" FontSize="Small"/>
-        <Button Text="Sign up"/>
+        <Button Text="Sign up" BackgroundColor="#E9573D"/>
     </StackLayout>
 </ContentPage>

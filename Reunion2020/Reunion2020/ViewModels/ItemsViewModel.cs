@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Reunion2020.Models;
 using Reunion2020.Views;
 using System.Collections.Generic;
+using System.Net;
 
 namespace Reunion2020.ViewModels
 {
@@ -24,9 +25,17 @@ namespace Reunion2020.ViewModels
         public int pageNo;
 
 
-        public string Uri = "https://genforeningen-api.azurewebsites.net/events?position=";
+        public string Uri = "https://genforeningen-api-website.azurewebsites.net/events?position=";
 
-        private HttpClient _client = new HttpClient();
+        static CookieContainer cookieContainer = new CookieContainer();
+        static HttpClientHandler handler = new HttpClientHandler()
+        {
+            UseCookies = true,
+            CookieContainer = cookieContainer
+        
+        };
+
+        private HttpClient _client = new HttpClient(handler);
         public ItemsViewModel()
         { 
             PageTitle = "Events";

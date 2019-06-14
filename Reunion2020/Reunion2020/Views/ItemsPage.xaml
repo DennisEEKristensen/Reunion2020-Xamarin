@@ -49,8 +49,19 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label Text="{Binding pageNo}" />
-        <Button Text="Prev" Clicked="OnPrev"/>
-        <Button Text="Next" Clicked="OnNext"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Text="Prev" BackgroundColor="#E9573D" Clicked="OnPrev" Grid.Column="1" Grid.Row="1"/>
+            <Button Text="Next" BackgroundColor="#E9573D" Clicked="OnNext" Grid.Column="2" Grid.Row="1"/>
+
+        </Grid>
+        
     </StackLayout>
 </ContentPage>
